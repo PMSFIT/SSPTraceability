@@ -25,7 +25,7 @@
                     <xs:complexType>
                         <xs:sequence>
                             <xs:element name="AnalyzeFAMTaskAndObjectives" type="stc:StepType" minOccurs="0"/>
-                            <xs:element name="VerifyClarification" type="stc:StepType" minOccurs="0"/>
+                            <xs:element name="VerifyScopeClarification" type="stc:StepType" minOccurs="0"/>
                             <xs:group ref="stc:GPhaseCommon"/>
                         </xs:sequence>
                         <xs:attributeGroup ref="ssc:ABaseElement"/>
@@ -81,17 +81,17 @@
                         <xs:attributeGroup ref="ssc:ABaseElement"/>
                     </xs:complexType>
                 </xs:element>
-                <xs:element name="TrackingWorkpackagesPhase" minOccurs="0">
+                <xs:element name="ImplementationPhase" minOccurs="0">
                     <xs:annotation>
                         <xs:documentation xml:lang="en">
-                            This element specifies the Tracking Workpackages Phase of the overall FAM.
+                            This element specifies the Implementation Phase of the overall FAM.
                         </xs:documentation>
                     </xs:annotation>
                     <xs:complexType>
                         <xs:sequence>
                             <xs:element name="CreateWorkPackages" type="stc:StepType" minOccurs="0"/>
                             <xs:element name="TrackWorkPackages" type="stc:StepType" minOccurs="0"/>
-                            <xs:element name="VerifyTracking" type="stc:StepType" minOccurs="0"/>
+                            <xs:element name="VerifyImplementation" type="stc:StepType" minOccurs="0"/>
                             <xs:group ref="stc:GPhaseCommon"/>
                         </xs:sequence>
                         <xs:attributeGroup ref="ssc:ABaseElement"/>
